@@ -1,0 +1,180 @@
+ *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font: bold;
+    color: white;
+}
+
+nav{
+    background-color: red;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+a{
+    color: white;
+}
+
+#about{
+    position: relative;
+    padding: 0px 10% 50px 10%;
+    background-color: #0F3460;
+    font-size: 16px;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.heading{
+    padding: 50px;
+    text-align: center;
+}
+
+#product{
+    position: relative;
+    background-color: green;
+    padding: 0px 10% 50px 10%;
+}
+
+.card{
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-img{
+    display: block;
+    height: 250px;
+    width: 270px;
+    border-radius: 4px;
+}
+
+#service{
+    background-color: grey;
+    padding: 0px 10% 50px 10%;
+}
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-block{
+    width: 200px;
+    height: auto;
+    background-color: black;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#contact{
+    background-color: black;
+}
+
+.contacts{
+    display: flex;
+    padding: 0px 20% 50px 20%;
+    justify-content: space-around;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 930px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px){
+    ul{
+        /* position: relative; */
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(185, 42, 42);
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    #checked:checked ~ ul{
+        left: 0;
+    }
+    #about{
+        margin-top: 70vh;
+    }
+    .products{
+        display: block;
+    }
+    .services{
+        display: block;
+    }
+    .service-block{
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .product-img{
+        margin: 0px auto;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .contacts{
+        display: block;
+    }
+}
